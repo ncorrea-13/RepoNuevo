@@ -30,7 +30,18 @@ body,*{ font-family: 'Roboto', sans-serif;
 }
 .hero-section{
     background-color:var(--project-green);
-        color:white
+        color:white;
+        position:relative;
+            
+}
+.hero-section::before{
+    position:absolute;
+    content:'';
+    background-image:url("/images/heroSectionImage.png");
+    width:10rem;
+    height:10rem;
+    top:0;
+    right:0;
 }
 .hero-section-title{
 
