@@ -20,7 +20,9 @@ public class ControladorGeneral {
         try { // hay que mejorar como está hecho esto, la idea es agarrar cuando no hay ningún
               // servicio
             List<Servicio> servicios = servi.listarServicio();
-            modelo.addAttribute("Servicios", servicios);
+
+            modelo.addAttribute("Servicios", servicios); //agrega servicios en el index
+
         } catch (Exception nulException) {
 
         }
