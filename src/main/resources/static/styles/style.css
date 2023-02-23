@@ -1,26 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root{
     --project-green : #0D4A31;
     --project-black : #2B2B31;
     --project-yellow : #F7C85A;
+    _-bs-font-sans-serif:'Roboto', sans-serif;
+    --bs-font-monospace:'Roboto', sans-serif;
+  
 }
-
+// Fonts exported
+//   font-family: 'Dancing Script', cursive;
+//    font-family: 'Roboto', sans-serif;
 *{
     margin:0;
-    
+
     padding: 0;
     box-sizing: border-box;
 }
+body,*{ font-family: 'Roboto', sans-serif;
 
-.y{color:var(--project-yellow)
-    
 }
-.g{color:var(--project-green)
-    
-}
-.b{color:var(--project-black)
-    
-}
+
 .main-navbar{
     background-color: var(--project-green)
-       
+
+}
+.btn-main-project{
+    background-color:var(--project-yellow);
+    color:var(--project-black)
+}
+.hero-section{
+    background-color:var(--project-green);
+        color:white
+}
+.hero-section-title{
+
+        font-family: 'Dancing Script', cursive;
 }
