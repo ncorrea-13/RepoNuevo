@@ -10,12 +10,12 @@ and open the template in the editor.
         <header th:replace="./fragments/navbar :: navbar">
 
         </header>  
-        <main class='hero-section'>
+        <main class='hero-section py-lg-5 py-3'>
             <div class='container'> 
                 <div class='row'>
-                    <div class='col col-12 col-md-6'>
-                        <div class='hero-section-text-content'>
-                            <h1 class='hero-section-title'>
+                    <div class='col col-12 col-md-6 d-flex'>
+                        <div class='hero-section-text-content gap-3 gap-lg-4  d-flex flex-column'>
+                            <h1 class='hero-section-title mt-auto'>
                                 Bienes 
                                 <br/>
                                 & Servicios
@@ -25,13 +25,17 @@ and open the template in the editor.
                                 pellentesque nec, egestas non 
                                 nisi. Donec rutrum congue leo eget malesuada. 
                             </p> 
-                            <div class='gap-4 hero-section-btns-container d-flex'>
-                                <button class='btn  btn-main-project'>registrarse</button>
-                                <button class='btn btn-main-project'>buscar servicio</button>
+                            <div class='gap-4 hero-section-btns-container d-flex mb-5 pb-4'>
+                                <button class='btn  btn-main-project text-capitalize'>registrarse</button>
+                                <button class='btn btn-main-project text-capitalize'>buscar servicio</button>
                             </div>
                         </div>     
                     </div>
-                    <div class='col col-12 col-md-6'></div>
+                    <div class='col col-12 col-md-6 d-flex'>
+                        <div class='img-container'>
+                            <img class="img-fluid" th:src="@{images/heroSectionImage.jpg}" >
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
