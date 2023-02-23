@@ -1,0 +1,26 @@
+:root{
+    --project-green : #0D4A31;
+    --project-black : #2B2B31;
+    --project-yellow : #F7C85A;
+}
+
+*{
+    margin:0;
+    
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.y{color:var(--project-yellow)
+    
+}
+.g{color:var(--project-green)
+    
+}
+.b{color:var(--project-black)
+    
+}
+.main-navbar{
+    background-color: var(--project-green)
+       
+}
