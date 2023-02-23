@@ -14,9 +14,10 @@ public class Servicio {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id; //Id único del servicio
-    private double estrellas;
-    private String nombre;
-    private String descripcion;
+    private double estrellas; //cantidad de estrellas promedio del servicio
+    private String nombre; //título del servicio
+    private String descripcion; //descripción de este servicio
+    //queda pendiente posibilidad de imágenes
 
     public Long getId() {
         return id;
@@ -33,4 +34,20 @@ public class Servicio {
     public void setEstrellas(double estrellas){
         this.estrellas = estrellas;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
 }
