@@ -21,19 +21,17 @@ body,*{ font-family: 'Roboto', sans-serif;
 }
 
 .main-navbar{
-<<<<<<< HEAD
+
     z-index:10;
     background: transparent;
 }
 .btn-main-project{
     background-color:var(--project-yellow)
 }
-=======
-    z-index: 100;
 
-    background: transparent;
->>>>>>> developer
-}
+  
+
+
 .btn-main-project{
     background-color:var(--project-yellow);
     color:var(--project-black)
@@ -44,54 +42,53 @@ body,*{ font-family: 'Roboto', sans-serif;
     top: 0;
     background-color:var(--project-green);
     color:white;
-<<<<<<< HEAD
-    position:relative;
-=======
 
->>>>>>> developer
+    position:relative;
+
+
+
 
 }
 .hero-section::before{
     position: absolute;
     content: '';
     background-image: url("/images/heroSectionImage.png");
-<<<<<<< HEAD
+
     width: 130rem;
     height: 62rem;
-    bottom: -133px;
-    left: 0;
+  
+   
     scale: 0.6;
     object-fit: cover;
     background-repeat: no-repeat;
     opacity: 0.5;
-=======
+
     width: 52rem;
     height: 35rem;
-    top: -172px;
+    top: -72px;
     right: -67px;
     background-repeat: no-repeat;
     object-fit: cover;
     opacity: .5;
->>>>>>> developer
+
 }
 .hero-section-title{
 
     font-family: 'Dancing Script', cursive;
-<<<<<<< HEAD
+
 }
 .img-container{
     z-index:1;
-=======
->>>>>>> developer
+
 }
 .img-container img{
     height:50vh;
     object-fit:cover;
-<<<<<<< HEAD
+
     z.index:10
-=======
+
 }
 .img-container{
     z-index:10
->>>>>>> developer
+
 }
