@@ -5,7 +5,7 @@
     --project-yellow : #F7C85A;
     _-bs-font-sans-serif:'Roboto', sans-serif;
     --bs-font-monospace:'Roboto', sans-serif;
-  
+
 }
 // Fonts exported
 //   font-family: 'Dancing Script', cursive;
@@ -21,33 +21,43 @@ body,*{ font-family: 'Roboto', sans-serif;
 }
 
 .main-navbar{
-    background-color: var(--project-green)
+    z-index: 100;
 
+    background: transparent;
 }
 .btn-main-project{
     background-color:var(--project-yellow);
     color:var(--project-black)
 }
 .hero-section{
+
+    width: 100%;
+    top: 0;
     background-color:var(--project-green);
-        color:white;
-        position:relative;
-            
+    color:white;
+
+
 }
 .hero-section::before{
-    position:absolute;
-    content:'';
-    background-image:url("/images/heroSectionImage.png");
-    width:10rem;
-    height:10rem;
-    top:0;
-    right:0;
+    position: absolute;
+    content: '';
+    background-image: url("/images/heroSectionImage.png");
+    width: 52rem;
+    height: 35rem;
+    top: -172px;
+    right: -67px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    opacity: .5;
 }
 .hero-section-title{
 
-        font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive;
 }
 .img-container img{
     height:50vh;
     object-fit:cover;
+}
+.img-container{
+    z-index:10
 }

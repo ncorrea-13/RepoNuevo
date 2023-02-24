@@ -10,7 +10,7 @@ and open the template in the editor.
         <header th:replace="./fragments/navbar :: navbar">
 
         </header>  
-        <main class='hero-section py-lg-5 py-3'>
+        <main class='hero-section py-lg-5 py-3 position-absolute mt-5'>
             <div class='container'> 
                 <div class='row'>
                     <div class='col col-12 col-md-6 d-flex  my-5 my-lg-0 '>
@@ -33,11 +33,15 @@ and open the template in the editor.
                     </div>
                     <div class='col col-12 col-md-6 d-flex'>
                         <div class='img-container'>
-                            <img class="img-fluid" th:src="@{images/heroSectionImage.jpg}" >
+                            <img class="img-fluid" th:src="@{images/heroImgNoBackgground.png}" >
                         </div>
                     </div>
                 </div>
             </div>
         </main>
+        <script>
+            const navbarHeight = document.querySelector('.main-navbar').offsetHeight;
+            document.querySelector('.hero-section').style.top=-navbarHeight+"px"
+        </script>   
     </body>
 </html>
