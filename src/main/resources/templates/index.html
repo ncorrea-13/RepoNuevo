@@ -10,8 +10,8 @@ and open the template in the editor.
         <header th:replace="./fragments/navbar :: navbar">
 
         </header>  
-        <main class='hero-section py-lg-5 py-3'>
-            <div class='container'> 
+        <main class='hero-section py-lg-5 py-3 pt-5'>
+            <div class='container pt-5'> 
                 <div class='row'>
                     <div class='col col-12 col-md-6 d-flex  my-5 my-lg-0 '>
                         <div class='hero-section-text-content gap-3 gap-lg-4  d-flex flex-column'>
@@ -39,5 +39,13 @@ and open the template in the editor.
                 </div>
             </div>
         </main>
+        <script> 
+            const navHeight = document.querySelector('.main-navbar').clientHeight;
+            const mainSection = document.querySelector('.hero-section');
+            mainSection.style.transform = `translatey(-${navHeight}px)`
+            mainSection.style.paddingTop = `translatey(${+navHeight*2}px)`
+        </script>
+
+
     </body>
 </html>
